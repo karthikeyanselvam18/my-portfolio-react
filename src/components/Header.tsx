@@ -34,7 +34,7 @@ export default function Header(props: IHeaderProps) {
     };
   }, []);
 
-  const isMenuOpenStyle = isMenuOpen ? "1" : "0";
+  const isMenuOpenStyle = isMenuOpen ? "scale-y-1" : "scale-y-0";
   const isMenuOpenBtnStyle = isMenuOpen ? "is-active" : "";
 
   return (
@@ -53,7 +53,7 @@ export default function Header(props: IHeaderProps) {
         </button>
       </div>
       <ul
-        className={`absolute left-0 top-full flex w-full origin-top transform flex-col items-center justify-between gap-3 py-3 text-base font-semibold shadow-lg transition-transform duration-300 md:transition-none scale-y-${isMenuOpenStyle} bg-slate-50 md:static md:w-auto md:transform-none md:flex-row md:gap-10 md:py-0
+        className={`absolute left-0 top-full flex w-full origin-top transform flex-col items-center justify-between gap-3 py-3 text-base font-semibold shadow-lg transition-transform duration-300 md:transition-none ${isMenuOpenStyle} bg-slate-50 md:static md:w-auto md:transform-none md:flex-row md:gap-10 md:py-0
         md:shadow-none`}
         ref={ulRef}
       >
