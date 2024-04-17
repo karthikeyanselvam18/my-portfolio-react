@@ -16,13 +16,13 @@ export default function EducationComponent({
   place,
 }: IEducationComponentProps) {
   return (
-    <div className="group relative aspect-square w-11/12 rounded-full bg-purple-500">
-      <div className="absolute top-1/2 flex -translate-y-1/2 transform flex-col rounded p-3 group-odd:right-3 group-odd:items-end group-even:left-3 group-even:items-start">
-        <span className="text-nowrap text-sm font-semibold">
-          {course} <span className="text-xs">{duration}</span>
+    <div className="group relative w-full h-20 bg-slate-300">
+      <div className="text-slate-300 absolute top-1/2 flex -translate-y-1/2 transform flex-col rounded p-3 group-odd:right-5 group-odd:items-end group-even:left-5 group-even:items-start">
+        <span className="text-nowrap flex items-baseline gap-1.5">
+          <span className="text-sm md:text-2xl font-semibold text-purple-500 ">{course}</span><span className="text-[0.7rem] md:text-base">{duration}</span>
         </span>
-        <span className="text-nowrap text-sm">{institute}</span>
-        <span className="text-nowrap text-sm">{place}</span>
+        <span className="text-nowrap text-sm md:text-lg">{institute}</span>
+        <span className="text-nowrap text-sm md:text-lg">{place}</span>
       </div>
     </div>
   );
