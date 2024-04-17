@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "course": "Java Fullstack",
+      "duration": "2023-24",
+      "institute": "Pumo Technovation",
+      "place":"Tambaram"
+    },
+    {
+      "id": 2,
+      "course": "B.C.A.",
+      "duration": "2020-23",
+      "institute": "A.V.C. College",
+      "place":"Mayiladuthurai"
+    },
+    {
+      "id": 3,
+      "course": "Class XII",
+      "duration": "2019-20",
+      "institute": "DBTR Nat. Hr. Sec. School",
+      "place":"Mayiladuthurai"
+    },
+    {
+      "id": 4,
+      "course": "Class XII",
+      "duration": "2017-18",
+      "institute": "DBTR Nat. Hr. Sec. School",
+      "place":"Mayiladuthurai"
+    }
+  ]
+}

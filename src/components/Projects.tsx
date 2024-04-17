@@ -6,7 +6,7 @@ export interface IProjectsProps {}
 export default function Projects(props: IProjectsProps) {
   return (
     <div
-      className="mb-5 flex scroll-m-14 flex-col items-start gap-3  p-3"
+      className="mb-5 flex scroll-m-14 flex-col items-start gap-3 p-3"
       id="projects"
     >
       <span className="relative">
