@@ -120,7 +120,7 @@ export default function ContactMe() {
       <span
         className={`fixed right-3 top-16 rounded border border-red-500 bg-slate-100 p-2 text-red-500 transition-transform duration-300 ${isNotSubmited ? "translate-x-0" : "translate-x-96"}`}
       >
-        An error occured!
+        Spmething went wrong!
       </span>
     </div>
   );
