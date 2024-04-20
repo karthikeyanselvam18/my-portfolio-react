@@ -1,10 +1,5 @@
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
+import ContactComponent from "./ContactComponent";
+import data from "../json/contacts.json"
 
 export interface IHomeProps {}
 
@@ -26,30 +21,7 @@ export default function Home(props: IHomeProps) {
           </p>
         </div>
         <div className="flex gap-5">
-          <a
-            href="#"
-            className="grid size-12 transform place-items-center rounded-lg text-purple-500 shadow-md shadow-slate-400 transition-transform duration-300 hover:-translate-y-1"
-          >
-            <FontAwesomeIcon size="2x" icon={faEnvelope} />
-          </a>
-          <a
-            href="#"
-            className="grid size-12 transform place-items-center rounded-lg text-purple-500 shadow-md shadow-slate-400 transition-transform duration-300 hover:-translate-y-1"
-          >
-            <FontAwesomeIcon size="2x" icon={faLinkedinIn} />
-          </a>
-          <a
-            href="#"
-            className="grid size-12 transform place-items-center rounded-lg text-purple-500 shadow-md shadow-slate-400 transition-transform duration-300 hover:-translate-y-1"
-          >
-            <FontAwesomeIcon size="2x" icon={faGithub} />
-          </a>
-          <a
-            href="#"
-            className="grid size-12 transform place-items-center rounded-lg text-purple-500 shadow-md shadow-slate-400 transition-transform duration-300 hover:-translate-y-1"
-          >
-            <FontAwesomeIcon size="2x" icon={faInstagram} />
-          </a>
+          {data.data.map(contact => <ContactComponent key={contact.id} {...contact} />)}
         </div>
       </div>
       <div className="flex w-full items-center justify-center md:w-5/12">
