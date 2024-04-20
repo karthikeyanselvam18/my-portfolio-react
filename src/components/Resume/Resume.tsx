@@ -1,17 +1,17 @@
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle/SectionTitle";
 export interface IResumeProps {}
 
 export default function Resume(props: IResumeProps) {
   return (
     <div
-      className="mb-5 flex w-full scroll-m-16 flex-col items-start gap-3 p-3"
+      className="mb-5 flex w-full scroll-m-16 flex-col items-start gap-3 p-3 md:w-1/2"
       id="resume"
     >
       <SectionTitle title="Resume" />
-      <div className="flex flex-col items-center justify-center gap-10 md:flex-row">
-        <div className="flex aspect-square w-3/5 items-center justify-center overflow-hidden border bg-blue-600 shadow md:w-1/5">
+      <div className="flex flex-col items-center">
+        <div className="flex aspect-square w-[45%] items-center justify-center overflow-hidden border bg-blue-600 shadow">
           <img className="h-full object-cover" src="assets/resume.jpg" alt="" />
         </div>
         <div className="flex flex-col items-center gap-4">

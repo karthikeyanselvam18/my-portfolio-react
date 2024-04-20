@@ -1,7 +1,6 @@
-import * as React from "react";
 import ProjectComponent from "./ProjectComponent";
-import data from "../json/projects.json";
-import SectionTitle from "./SectionTitle";
+import data from "../../json/projects.json";
+import SectionTitle from "../SectionTitle/SectionTitle";
 export interface IProjectsProps {}
 
 export default function Projects(props: IProjectsProps) {
@@ -10,6 +9,7 @@ export default function Projects(props: IProjectsProps) {
       className="mb-5 flex scroll-m-16 flex-col items-start gap-3 p-3"
       id="projects"
     >
+      <SectionTitle title="Projects" />
       <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {data.data.map((project) => (
           <ProjectComponent

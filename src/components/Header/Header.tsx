@@ -1,5 +1,3 @@
-import { log } from "console";
-import { url } from "inspector";
 import { useEffect, useRef, useState } from "react";
 
 export interface IHeaderProps {}
@@ -91,7 +89,7 @@ export default function Header(props: IHeaderProps) {
         </li>
         <li>
           <a
-            href="#"
+            href="#contactMe"
             className="cursor-pointer transition-colors duration-300 hover:text-gray-400"
           >
             Contact

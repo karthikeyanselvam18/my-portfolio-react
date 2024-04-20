@@ -1,5 +1,5 @@
-import ContactComponent from "./ContactComponent";
-import data from "../json/contacts.json"
+import ContactComponent from "../Contact/ContactComponent";
+import data from "../../json/contacts.json";
 
 export interface IHomeProps {}
 
@@ -21,7 +21,9 @@ export default function Home(props: IHomeProps) {
           </p>
         </div>
         <div className="flex gap-5">
-          {data.data.map(contact => <ContactComponent key={contact.id} {...contact} />)}
+          {data.data.map((contact) => (
+            <ContactComponent key={contact.id} {...contact} />
+          ))}
         </div>
       </div>
       <div className="flex w-full items-center justify-center md:w-5/12">
